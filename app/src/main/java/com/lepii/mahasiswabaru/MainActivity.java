@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText etNomorPendaftaran, etNamaCalonMahasiswa;
@@ -32,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
                 }
                 else if (namaCalonMahasiswa.trim().equals("")) {
                     etNamaCalonMahasiswa.setError("Mohon isi Nama Calon Mahasiswa!");
+                }
+                else {
+                    Toast.makeText(MainActivity.this, "Selamat, Anda Sudah Terdaftar", Toast.LENGTH_SHORT).show();
                 }
             }
         });

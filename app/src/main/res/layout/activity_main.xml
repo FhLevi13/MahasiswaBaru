@@ -51,8 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Laki-Laki"
-            android:textSize="18dp"
-            android:defaultFocusHighlightEnabled="true"/>
+            android:textSize="18dp" />
 
         <RadioButton
             android:id="@+id/rb_perempuan"
