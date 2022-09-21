@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                     etNamaCalonMahasiswa.setError("Mohon isi Nama Calon Mahasiswa!");
                 }
                 else {
-                    Toast.makeText(MainActivity.this, "Selamat, Anda Sudah Terdaftar", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Selamat " + namaCalonMahasiswa + " Anda Sudah Terdaftar", Toast.LENGTH_SHORT).show();
                 }
             }
         });
