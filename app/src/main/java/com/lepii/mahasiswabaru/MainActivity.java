@@ -24,15 +24,17 @@ public class MainActivity extends AppCompatActivity {
         btnDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                
+                nomorPendaftaran = etNomorPendaftaran.getText().toString();
+                namaCalonMahasiswa = etNamaCalonMahasiswa.getText().toString();
+
+                if (nomorPendaftaran.trim().equals("")) {
+                    etNomorPendaftaran.setError("Mohon isi Nomor Pendaftaran!");
+                }
+                else if (namaCalonMahasiswa.trim().equals("")) {
+                    etNamaCalonMahasiswa.setError("Mohon isi Nama Calon Mahasiswa!");
+                }
             }
         });
 
-        nomorPendaftaran = etNomorPendaftaran.getText().toString();
-        namaCalonMahasiswa = etNamaCalonMahasiswa.getText().toString();
-
-        if (nomorPendaftaran.trim().equals("")) {
-            etNomorPendaftaran.setError("Mohon isi Nomor Pendaftaran!");
-        }
     }
 }
