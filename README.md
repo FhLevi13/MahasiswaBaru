@@ -1,2 +1,2 @@
 # Aplikasi Mahasiswa Baru
-Percobaan aplikasi Mahasiswa Baru
+Belajar membuat aplikasi Mahasiswa Baru
